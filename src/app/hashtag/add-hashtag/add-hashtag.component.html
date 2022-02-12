@@ -1,0 +1,31 @@
+<mat-card>
+    <form class="example-form" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Categoria</mat-label>
+            <input 
+            matInput             
+            placeholder="Ex. anime" 
+            style="margin: 5px"
+            id="categoria"
+            type="text"
+            formControlName="categoria"
+           
+            >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Hashtags</mat-label>
+            <textarea matInput 
+            placeholder="Ex #vidalinsa #vida" 
+            style="margin: 5px"
+            id="hashtag"
+            type="text"
+            formControlName="hashtag"
+         
+            ></textarea>
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="warn">Salvar</button>
+    </form>
+</mat-card>

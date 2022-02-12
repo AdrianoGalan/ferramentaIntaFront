@@ -1,7 +1,7 @@
-export interface Hashtag {
+export class Hashtag {
 
-  id: string;
-  hash: string;
-  categoria: string;
+  id!: string;
+  hash!: string;
+  categoria!: string;
 
 }

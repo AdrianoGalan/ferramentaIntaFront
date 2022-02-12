@@ -23,4 +23,10 @@ export class HashtagService {
 
     return this.http.get(`${this.API}/gerar/${categoria}`, {responseType: 'text'}).pipe(take(1));
   }
+
+  salvar(hashtag: Hashtag) {
+
+
+    return this.http.post(this.API, JSON.stringify(hashtag), { headers: new HttpHeaders().set('Content-Type', 'application/json'), responseType: 'text' }).pipe(take(1));
+  }
 }
